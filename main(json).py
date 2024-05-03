@@ -78,7 +78,7 @@ def save():
 def search_password():
     website = website_input.get()
     try:
-        with open("E:/Python/Course/password-manager/data.json", "r") as data_file:
+        with open("", "r") as data_file:
             data = json.load(data_file)
 
     except FileNotFoundError:
@@ -103,7 +103,7 @@ window.config(padx=20, pady=20)
 
 
 canvas = Canvas(width=200, height=200)
-logo = PhotoImage(file='E:/Python/Course/password-manager/logo.png')
+logo = PhotoImage(file='')
 canvas.create_image(100, 100, image=logo)
 canvas.grid(column=1, row=0, columnspan=2)
 
@@ -126,7 +126,7 @@ website_input.grid(column=1, row=1)
 
 
 email_input = Entry(width=41)
-email_input.insert(END, "itsrhythmarora@17gmail.com")
+email_input.insert(END, "")
 email_input.grid(column=1, row=2, columnspan=2)
 
 
